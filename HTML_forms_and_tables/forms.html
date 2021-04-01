@@ -52,6 +52,57 @@
         <button>Search YouTube</button>
     </form>
 
+    <hr>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <div>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </div>
+        <div>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </div>
+        <div>
+            <label for="cheese">Amount of Cheese</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_level">
+        </div>
+
+        <div>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea name="requests" id="requests" cols="30" rows="10" placeholder="Type something here..."></textarea>
+        </div>
+
+        <button>Sumbit</button>
+
+        <h2>Validations Demo</h2>
+        <form action="/dummy">
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <!-- <input type="email" name="email" id="email" required> -->
+                <input type="url" name="url" id="url">
+            </div>
+            <button>Submit</button>
+        </form>
+
 
 </body>
 
